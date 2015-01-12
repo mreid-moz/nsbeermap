@@ -21,8 +21,10 @@ var breweries = {
         { name: "Granite Brewing",              location: "6054 Stairs St",        logo: "granite.jpg",      url: "http://www.granitebreweryhalifax.ca/",     x: 1012, y: 746,  stroke: "steelblue",    fill: "gold" },
         { name: "North Brewing Company",        location: "2576 Agricola St",      logo: "north.png",        url: "http://www.northbrewing.ca/",              x: 1065, y: 790,  stroke: "black",        fill: "white" },
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
+        { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
         { name: "Rogue's Roost",                location: "5435 Spring Garden Rd", logo: "rogues_roost.png", url: "http://www.roguesroost.ca/",               x: 1140, y: 860,  stroke: "black",        fill: "black" },
+        { name: "Coming Soon: Wrought Iron Brewing", location: "2736 Robie St",    logo: "wrought_iron.png", url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
     ],
     zooms: [
         { name: "Halifax", x: 570, y: 730, img: "halifax_streets2c.png", ix: 800, iy: 600, iw: 475, ih: 475 },
@@ -45,7 +47,7 @@ hover_in = function () {
 
     var b = this.info;
     this.label = this.paper.set();
-    this.label.push(this.paper.rect(b.x - 110, b.y - 150, 220, 145, 5).attr({"opacity": 0, fill: "#fff", stroke: "#000"}));
+    this.label.push(this.paper.rect(b.x - 120, b.y - 150, 240, 145, 5).attr({"opacity": 0, fill: "#fff", stroke: "#000"}));
     this.label.push(this.paper.text(b.x, b.y - 45, b.name).attr({"font-family": "cursive", "font-weight": "bold", "font-size": "15px", "opacity": 0.0}));
     this.label.push(this.paper.text(b.x, b.y - 25, b.location).attr({"font-family": "cursive", "font-size": "14px", "opacity": 0.0}));
     this.label.push(this.paper.image("img/" + b.logo, b.x - 43, b.y - 145, 86, 86).attr({"opacity": 0.0}));
@@ -64,17 +66,21 @@ function drawPoints(R, somePoints, baseX, baseY) {
     var offset = 0;
     var seen = {};
     somePoints.forEach(function(b){
+        var opacity = 1.0;
+        if (b.name.startsWith("Coming Soon:")) {
+          opacity = 0.6;
+        }
         if (!seen[b.name]) {
             // Legend:
-            R.circle(baseX, baseY + offset, 5).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2});
+            R.circle(baseX, baseY + offset, 5).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
             R.text(baseX + 10, baseY + offset, b.name).attr({"text-anchor": "start", "font-family": "cursive", "font-size": "20px", "href": b.url});
             offset += 25;
         }
         seen[b.name] = true;
 
         // Map point:
-        var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url});
-        //console.log("Adding hover for " + b.name);
+        var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url, opacity: opacity});
+        // var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
         p.hover(hover_in, hover_out);
         p.info = b;
 
@@ -158,8 +164,8 @@ function load() {
 
 
     drawPoints(R, breweries.province, 40, 135);
-    drawPoints(R, breweries.city, 550, 835);
+    drawPoints(R, breweries.city, 530, 835);
 
 
-    R.text(350, 1050, "Last Updated Sunday, January 11, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Monday, January 12, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
