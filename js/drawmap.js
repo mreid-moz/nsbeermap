@@ -4,7 +4,7 @@ var breweries = {
         { name: "Big Spruce Brewing",           location: "Nyanza, Cape Breton", logo: "big_spruce.jpg",    url: "http://bigspruce.ca/",                      x: 1070, y: 330,  stroke: "green",        fill: "gold" },
         { name: "Boxing Rock Brewing Co.",      location: "Shelburne",           logo: "boxing_rock.png",   url: "http://boxingrock.ca/",                     x: 242,  y: 970,  stroke: "darkorange",   fill: "darkorange" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
-        { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 860,  y: 475,  stroke: "mediumpurple", fill: "burlywood" },
+        { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
         { name: "Paddy's Irish Pub",            location: "Wolfville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 420,  y: 600,  stroke: "gold",         fill: "green" },
         { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
