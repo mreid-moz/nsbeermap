@@ -31,6 +31,13 @@ var breweries = {
     ]
 }
 
+// Hack for Chrome :(
+if (typeof String.prototype.startsWith != 'function') {
+    String.prototype.startsWith = function (str){
+        return this.slice(0, str.length) == str;
+    };
+}
+
 var start = function () {
     this.ox = this.attr("cx");
     this.oy = this.attr("cy");
@@ -47,7 +54,7 @@ hover_in = function () {
 
     var b = this.info;
     this.label = this.paper.set();
-    this.label.push(this.paper.rect(b.x - 120, b.y - 150, 240, 145, 5).attr({"opacity": 0, fill: "#fff", stroke: "#000"}));
+    this.label.push(this.paper.rect(b.x - 125, b.y - 150, 250, 145, 5).attr({"opacity": 0, fill: "#fff", stroke: "#000"}));
     this.label.push(this.paper.text(b.x, b.y - 45, b.name).attr({"font-family": "cursive", "font-weight": "bold", "font-size": "15px", "opacity": 0.0}));
     this.label.push(this.paper.text(b.x, b.y - 25, b.location).attr({"font-family": "cursive", "font-size": "14px", "opacity": 0.0}));
     this.label.push(this.paper.image("img/" + b.logo, b.x - 43, b.y - 145, 86, 86).attr({"opacity": 0.0}));
