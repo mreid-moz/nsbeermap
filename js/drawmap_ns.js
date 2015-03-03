@@ -24,6 +24,7 @@ var breweries = {
         { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
         { name: "Rogue's Roost",                location: "5435 Spring Garden Rd", logo: "rogues_roost.png", url: "http://www.roguesroost.ca/",               x: 1140, y: 860,  stroke: "black",        fill: "black" },
+        { name: "Coming Soon: Unfiltered Brewing", location: "6041 North St",      logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
         { name: "Coming Soon: Wrought Iron Brewing", location: "2736 Robie St",    logo: "wrought_iron.png", url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
     ],
     zooms: [
@@ -171,8 +172,8 @@ function load() {
 
 
     drawPoints(R, breweries.province, 40, 135);
-    drawPoints(R, breweries.city, 530, 835);
+    drawPoints(R, breweries.city, 530, 820);
 
 
-    R.text(350, 1050, "Last Updated Monday, January 12, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Tuesday, March 3, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
