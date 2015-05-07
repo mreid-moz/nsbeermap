@@ -18,6 +18,7 @@ var breweries = {
     city: [
         { name: "Gahan House",                  location: "1869 Upper Water St",   logo: "gahan.jpg",        url: "http://halifax.gahan.ca/",                 x: 1162, y: 820,  stroke: "gold",         fill: "black" },
         { name: "Garrison Brewing",             location: "1149 Marginal Rd",      logo: "garrison.png",     url: "http://garrisonbrewing.com/",              x: 1188, y: 883,  stroke: "black",        fill: "darkred" },
+        { name: "NEW! Good Robot Brewing Co.",  location: "2736 Robie St",         logo: "good_robot.png",   url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
         { name: "Granite Brewing",              location: "6054 Stairs St",        logo: "granite.jpg",      url: "http://www.granitebreweryhalifax.ca/",     x: 1012, y: 746,  stroke: "steelblue",    fill: "gold" },
         { name: "North Brewing Company",        location: "2576 Agricola St",      logo: "north.png",        url: "http://www.northbrewing.ca/",              x: 1065, y: 790,  stroke: "black",        fill: "white" },
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
@@ -25,7 +26,6 @@ var breweries = {
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
         { name: "Rogue's Roost",                location: "5435 Spring Garden Rd", logo: "rogues_roost.png", url: "http://www.roguesroost.ca/",               x: 1140, y: 860,  stroke: "black",        fill: "black" },
         { name: "Coming Soon: Unfiltered Brewing", location: "6041 North St",      logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
-        { name: "Coming Soon: Wrought Iron Brewing", location: "2736 Robie St",    logo: "wrought_iron.png", url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
     ],
     zooms: [
         { name: "Halifax", x: 570, y: 730, img: "halifax_streets2c.png", ix: 800, iy: 600, iw: 475, ih: 475 },
@@ -172,8 +172,8 @@ function load() {
 
 
     drawPoints(R, breweries.province, 40, 135);
-    drawPoints(R, breweries.city, 530, 820);
+    drawPoints(R, breweries.city, 520, 820);
 
 
-    R.text(350, 1050, "Last Updated Tuesday, March 3, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Thursday, May 7, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
