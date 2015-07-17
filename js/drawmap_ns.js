@@ -3,6 +3,7 @@ var breweries = {
         { name: "Bad Apple Brewing",            location: "Somerset",            logo: "bad_apple.jpg",     url: "http://badapplebrewhouse.ca/",              x: 370,  y: 595,  stroke: "darkorange",   fill: "black" },
         { name: "Big Spruce Brewing",           location: "Nyanza, Cape Breton", logo: "big_spruce.jpg",    url: "http://bigspruce.ca/",                      x: 1070, y: 330,  stroke: "green",        fill: "gold" },
         { name: "Boxing Rock Brewing Co.",      location: "Shelburne",           logo: "boxing_rock.png",   url: "http://boxingrock.ca/",                     x: 242,  y: 970,  stroke: "darkorange",   fill: "darkorange" },
+        { name: "NEW! Breton Brewing",          location: "Sydney",              logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
@@ -18,7 +19,7 @@ var breweries = {
     city: [
         { name: "Gahan House",                  location: "1869 Upper Water St",   logo: "gahan.jpg",        url: "http://halifax.gahan.ca/",                 x: 1162, y: 820,  stroke: "gold",         fill: "black" },
         { name: "Garrison Brewing",             location: "1149 Marginal Rd",      logo: "garrison.png",     url: "http://garrisonbrewing.com/",              x: 1188, y: 883,  stroke: "black",        fill: "darkred" },
-        { name: "NEW! Good Robot Brewing Co.",  location: "2736 Robie St",         logo: "good_robot.png",   url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
+        { name: "Good Robot Brewing Co.",       location: "2736 Robie St",         logo: "good_robot.png",   url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
         { name: "Granite Brewing",              location: "6054 Stairs St",        logo: "granite.jpg",      url: "http://www.granitebreweryhalifax.ca/",     x: 1012, y: 746,  stroke: "steelblue",    fill: "gold" },
         { name: "North Brewing Company",        location: "2576 Agricola St",      logo: "north.png",        url: "http://www.northbrewing.ca/",              x: 1065, y: 790,  stroke: "black",        fill: "white" },
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
@@ -175,5 +176,5 @@ function load() {
     drawPoints(R, breweries.city, 520, 820);
 
 
-    R.text(350, 1050, "Last Updated Thursday, May 7, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Friday, July 17, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
