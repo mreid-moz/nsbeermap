@@ -6,6 +6,7 @@ var breweries = {
         { name: "NEW! Breton Brewing",          location: "Sydney",              logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
+        { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
         { name: "Paddy's Irish Pub",            location: "Wolfville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 420,  y: 600,  stroke: "gold",         fill: "green" },
         { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
@@ -176,5 +177,5 @@ function load() {
     drawPoints(R, breweries.city, 520, 820);
 
 
-    R.text(350, 1050, "Last Updated Friday, July 17, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Wednesday, July 29, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
