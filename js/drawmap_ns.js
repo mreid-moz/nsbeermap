@@ -3,7 +3,8 @@ var breweries = {
         { name: "Bad Apple Brewing",            location: "Somerset",            logo: "bad_apple.jpg",     url: "http://badapplebrewhouse.ca/",              x: 370,  y: 595,  stroke: "darkorange",   fill: "black" },
         { name: "Big Spruce Brewing",           location: "Nyanza, Cape Breton", logo: "big_spruce.jpg",    url: "http://bigspruce.ca/",                      x: 1070, y: 330,  stroke: "green",        fill: "gold" },
         { name: "Boxing Rock Brewing Co.",      location: "Shelburne",           logo: "boxing_rock.png",   url: "http://boxingrock.ca/",                     x: 242,  y: 970,  stroke: "darkorange",   fill: "darkorange" },
-        { name: "NEW! Breton Brewing",          location: "Sydney, Cape Breton", logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
+        { name: "Breton Brewing",               location: "Sydney, Cape Breton", logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
+        { name: "NEW! FirkinStein Brewing",     location: "Bridgewater",         logo: "firkinstein.jpg",   url: "https://www.facebook.com/FirkinStein-Brewing-754150891380564", x: 390, y: 800,  stroke: "green", fill: "chocolate" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
         { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
@@ -26,8 +27,8 @@ var breweries = {
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
         { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
-        { name: "Rogue's Roost",                location: "5435 Spring Garden Rd", logo: "rogues_roost.png", url: "http://www.roguesroost.ca/",               x: 1140, y: 860,  stroke: "black",        fill: "black" },
-        { name: "NEW! Unfiltered Brewing",      location: "6041 North St",         logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
+        { name: "Coming Soon: Spindrift Brewing", location: "21 Frazee Ave, Dartmouth", logo: "spindrift.jpg", url: "https://www.facebook.com/Spindrift-Brewing-Company-1433138723650146", x: 1080, y: 606,  stroke: "white", fill: "blue" },
+        { name: "Unfiltered Brewing",           location: "6041 North St",         logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
     ],
     zooms: [
         { name: "Halifax", x: 570, y: 730, img: "halifax_streets2c.png", ix: 800, iy: 600, iw: 475, ih: 475 },
@@ -177,5 +178,5 @@ function load() {
     drawPoints(R, breweries.city, 520, 820);
 
 
-    R.text(350, 1050, "Last Updated Monday, August 3, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1050, "Last Updated Tuesday, September 22, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
