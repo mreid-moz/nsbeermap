@@ -23,6 +23,7 @@ var breweries = {
         { name: "Garrison Brewing",             location: "1149 Marginal Rd",      logo: "garrison.png",     url: "http://garrisonbrewing.com/",              x: 1188, y: 883,  stroke: "black",        fill: "darkred" },
         { name: "Good Robot Brewing Co.",       location: "2736 Robie St",         logo: "good_robot.png",   url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
         { name: "Granite Brewing",              location: "6054 Stairs St",        logo: "granite.jpg",      url: "http://www.granitebreweryhalifax.ca/",     x: 1012, y: 746,  stroke: "steelblue",    fill: "gold" },
+        { name: "Coming Soon: Nine Locks Brewing", location: "219 Waverley Rd",    logo: "ninelocks.jpg",    url: "http://lmgtfy.com/?q=where+is+nine+locks+brewing%3F", x: 1161, y: 634,  stroke: "gray",         fill: "darkgray" },
         { name: "North Brewing Company",        location: "2576 Agricola St",      logo: "north.png",        url: "http://www.northbrewing.ca/",              x: 1065, y: 790,  stroke: "black",        fill: "white" },
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
         { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
@@ -175,8 +176,8 @@ function load() {
 
 
     drawPoints(R, breweries.province, 40, 135);
-    drawPoints(R, breweries.city, 520, 820);
+    drawPoints(R, breweries.city, 510, 820);
 
 
-    R.text(350, 1050, "Last Updated Tuesday, September 22, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Tuesday, October 13, 2015.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
