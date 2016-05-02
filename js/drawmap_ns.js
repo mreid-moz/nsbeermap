@@ -14,8 +14,10 @@ var breweries = {
         { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
         { name: "Coming Soon: Roof Hound Brewing Co.",       location: "Digby",               logo: "roofhound.jpg",     url: "http://roofhound.ca/",                      x: 156,  y: 758,  stroke: "gray",         fill: "black" },
         { name: "Rudder's Brew Pub",            location: "Yarmouth",            logo: "rudders.jpg",       url: "http://ruddersbrewpub.com/",                x: 100,  y: 970,  stroke: "gold",         fill: "saddlebrown" },
+        { name: "Coming Soon: Salt Box Brewing",             location: "Mahone Bay",          logo: "saltbox.png",       url: "http://www.saltboxbrewingcompany.ca/",      x: 414,  y: 781,  stroke: "blue",         fill: "black" },
         { name: "Schoolhouse Brewery",          location: "Falmouth",            logo: "schoolhouse.jpg",   url: "http://schoolhousebrewery.ca",              x: 460,  y: 630,  stroke: "gold",         fill: "black" },
         { name: "Sea Level Brewing",            location: "Port Williams",       logo: "sea_level.png",     url: "http://www.sealevelbrewing.com/",           x: 410,  y: 600,  stroke: "black",        fill: "gold" },
+        { name: "Sober Island Brewing Co.",     location: "Sheet Harbour",       logo: "sober_island.png",  url: "http://soberbrewing.ca/",                   x: 765,  y: 648,  stroke: "gold",         fill: "midnightblue" },
         { name: "Tatamagouche Brewing Co.",     location: "Tatamagouche",        logo: "tatamagouche.png",  url: "http://tatabrew.com/",                      x: 620,  y: 435,  stroke: "darkorange",   fill: "white" },
         { name: "Townhouse Brew Pub",           location: "Antigonish",          logo: "townhouse.jpg",     url: "https://antigonishtownhouse.wordpress.com", x: 870,  y: 460,  stroke: "black",        fill: "wheat" },
         { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
@@ -181,5 +183,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 820);
 
 
-    R.text(350, 1080, "Last Updated Saturday, April 30, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Monday, May 2, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
