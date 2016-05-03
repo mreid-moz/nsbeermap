@@ -23,6 +23,7 @@ var breweries = {
         { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
     ],
     city: [
+        { name: "Downeast Beer Factory",        location: "612 Windmill Rd",       logo: "downeast.png",     url: "http://downeastbeerfactory.com/",          x: 1030, y: 604,  stroke: "tomato",       fill: "steelblue" },
         { name: "Gahan House",                  location: "1869 Upper Water St",   logo: "gahan.jpg",        url: "http://halifax.gahan.ca/",                 x: 1162, y: 820,  stroke: "gold",         fill: "black" },
         { name: "Garrison Brewing",             location: "1149 Marginal Rd",      logo: "garrison.png",     url: "http://garrisonbrewing.com/",              x: 1188, y: 883,  stroke: "black",        fill: "darkred" },
         { name: "Good Robot Brewing Co.",       location: "2736 Robie St",         logo: "good_robot.png",   url: "http://wroughtironbrewing.ca/",            x: 1041, y: 767,  stroke: "saddlebrown",  fill: "gold" },
@@ -180,8 +181,8 @@ function load() {
 
 
     drawPoints(R, breweries.province, 40, 135);
-    drawPoints(R, breweries.city, 510, 820);
+    drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Monday, May 2, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Tuesday, May 3, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
