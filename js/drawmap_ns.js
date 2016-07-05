@@ -6,7 +6,7 @@ var breweries = {
         { name: "Breton Brewing",               location: "Sydney, Cape Breton", logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
         { name: "FirkinStein Brewing",          location: "Bridgewater",         logo: "firkinstein.jpg",   url: "https://www.facebook.com/FirkinStein-Brewing-754150891380564", x: 390, y: 800,  stroke: "green", fill: "chocolate" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
-        { name: "Coming Soon: Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
+        { name: "Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
         { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
@@ -20,7 +20,9 @@ var breweries = {
         { name: "Sober Island Brewing Co.",     location: "Sheet Harbour",       logo: "sober_island.png",  url: "http://soberbrewing.ca/",                   x: 765,  y: 648,  stroke: "gold",         fill: "midnightblue" },
         { name: "Tatamagouche Brewing Co.",     location: "Tatamagouche",        logo: "tatamagouche.png",  url: "http://tatabrew.com/",                      x: 620,  y: 435,  stroke: "darkorange",   fill: "white" },
         { name: "Townhouse Brew Pub",           location: "Antigonish",          logo: "townhouse.jpg",     url: "https://antigonishtownhouse.wordpress.com", x: 870,  y: 460,  stroke: "black",        fill: "wheat" },
+        { name: "Coming Soon: Trider's Craft Beer", location: "Amherst",             logo: "triders.png",       url: "https://lmgtfy.com",                        x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
         { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
+        { name: "Wayfarer's Ale Society",       location: "Port Williams",       logo: "wayfarers.png",     url: "http://www.wayfarersale.ca",                x: 415,  y: 588,  stroke: "gold",         fill: "darkred" },
     ],
     city: [
         { name: "Downeast Beer Factory",        location: "612 Windmill Rd",       logo: "downeast.png",     url: "http://downeastbeerfactory.com/",          x: 1030, y: 604,  stroke: "tomato",       fill: "steelblue" },
@@ -180,7 +182,7 @@ function load() {
     });
 
 
-    drawPoints(R, breweries.province, 40, 135);
+    drawPoints(R, breweries.province, 40, 115);
     drawPoints(R, breweries.city, 510, 805);
 
 
