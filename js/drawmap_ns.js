@@ -188,5 +188,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Tuesday, July 5, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Thursday, August 11, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
