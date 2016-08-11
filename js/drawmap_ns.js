@@ -12,19 +12,21 @@ var breweries = {
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
         { name: "Paddy's Irish Pub",            location: "Wolfville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 420,  y: 600,  stroke: "gold",         fill: "green" },
         { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
-        { name: "Coming Soon: Roof Hound Brewing Co.",       location: "Digby",               logo: "roofhound.jpg",     url: "http://roofhound.ca/",                      x: 156,  y: 758,  stroke: "gray",         fill: "black" },
+        { name: "Roof Hound Brewing Co.",       location: "Digby",               logo: "roofhound.jpg",     url: "http://roofhound.ca/",                      x: 156,  y: 758,  stroke: "gray",         fill: "black" },
         { name: "Rudder's Brew Pub",            location: "Yarmouth",            logo: "rudders.jpg",       url: "http://ruddersbrewpub.com/",                x: 100,  y: 970,  stroke: "gold",         fill: "saddlebrown" },
-        { name: "Coming Soon: Salt Box Brewing",             location: "Mahone Bay",          logo: "saltbox.png",       url: "http://www.saltboxbrewingcompany.ca/",      x: 414,  y: 781,  stroke: "blue",         fill: "black" },
+        { name: "Salt Box Brewing",             location: "Mahone Bay",          logo: "saltbox.png",       url: "http://www.saltboxbrewingcompany.ca/",      x: 414,  y: 781,  stroke: "blue",         fill: "black" },
         { name: "Schoolhouse Brewery",          location: "Falmouth",            logo: "schoolhouse.jpg",   url: "http://schoolhousebrewery.ca",              x: 460,  y: 630,  stroke: "gold",         fill: "black" },
         { name: "Sea Level Brewing",            location: "Port Williams",       logo: "sea_level.png",     url: "http://www.sealevelbrewing.com/",           x: 410,  y: 600,  stroke: "black",        fill: "gold" },
         { name: "Sober Island Brewing Co.",     location: "Sheet Harbour",       logo: "sober_island.png",  url: "http://soberbrewing.ca/",                   x: 765,  y: 648,  stroke: "gold",         fill: "midnightblue" },
         { name: "Tatamagouche Brewing Co.",     location: "Tatamagouche",        logo: "tatamagouche.png",  url: "http://tatabrew.com/",                      x: 620,  y: 435,  stroke: "darkorange",   fill: "white" },
         { name: "Townhouse Brew Pub",           location: "Antigonish",          logo: "townhouse.jpg",     url: "https://antigonishtownhouse.wordpress.com", x: 870,  y: 460,  stroke: "black",        fill: "wheat" },
-        { name: "Coming Soon: Trider's Craft Beer", location: "Amherst",             logo: "triders.png",       url: "https://lmgtfy.com",                        x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
+        { name: "Trider's Craft Beer",          location: "Amherst",             logo: "triders.png",       url: "https://lmgtfy.com",                        x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
         { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
         { name: "Wayfarer's Ale Society",       location: "Port Williams",       logo: "wayfarers.png",     url: "http://www.wayfarersale.ca",                x: 415,  y: 588,  stroke: "gold",         fill: "darkred" },
     ],
     city: [
+        { name: "2 Crows Brewing Co",           location: "1932 Brunswick St",     logo: "2crows.jpg",       url: "http://2crowsbrewing.com/",                x: 1131, y: 820,  stroke: "blue",         fill: "red" },
+        { name: "Brightwood Brewery",           location: "Dartmouth",             logo: "brightwood.jpg",   url: "https://twitter.com/Brightwoodbeer",       x: 1145, y: 639,  stroke: "black",        fill: "white" },
         { name: "Downeast Beer Factory",        location: "612 Windmill Rd",       logo: "downeast.png",     url: "http://downeastbeerfactory.com/",          x: 1030, y: 604,  stroke: "tomato",       fill: "steelblue" },
         { name: "Gahan House",                  location: "1869 Upper Water St",   logo: "gahan.jpg",        url: "http://halifax.gahan.ca/",                 x: 1162, y: 820,  stroke: "gold",         fill: "black" },
         { name: "Garrison Brewing",             location: "1149 Marginal Rd",      logo: "garrison.png",     url: "http://garrisonbrewing.com/",              x: 1188, y: 883,  stroke: "black",        fill: "darkred" },
@@ -35,7 +37,7 @@ var breweries = {
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
         { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
-        { name: "Spindrift Brewing",            location: "21 Frazee Ave, Dartmouth", logo: "spindrift.jpg", url: "http://www.spindriftbrewing.com/",         x: 1080, y: 606,  stroke: "white",        fill: "blue" },
+        { name: "Spindrift Brewing",            location: "21 Frazee Ave",         logo: "spindrift.jpg", url: "http://www.spindriftbrewing.com/",         x: 1080, y: 606,  stroke: "white",        fill: "blue" },
         { name: "Unfiltered Brewing",           location: "6041 North St",         logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
     ],
     zooms: [
@@ -92,8 +94,8 @@ function drawPoints(R, somePoints, baseX, baseY) {
         if (!seen[b.name]) {
             // Legend:
             R.circle(baseX, baseY + offset, 5).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
-            R.text(baseX + 10, baseY + offset, b.name).attr({"text-anchor": "start", "font-family": "cursive", "font-size": "20px", "href": b.url});
-            offset += 25;
+            R.text(baseX + 10, baseY + offset, b.name).attr({"text-anchor": "start", "font-family": "cursive", "font-size": "18px", "href": b.url});
+            offset += 21;
         }
         seen[b.name] = true;
 
