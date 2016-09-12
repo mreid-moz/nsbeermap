@@ -20,7 +20,7 @@ var breweries = {
         { name: "Sober Island Brewing Co.",     location: "Sheet Harbour",       logo: "sober_island.png",  url: "http://soberbrewing.ca/",                   x: 765,  y: 648,  stroke: "gold",         fill: "midnightblue" },
         { name: "Tatamagouche Brewing Co.",     location: "Tatamagouche",        logo: "tatamagouche.png",  url: "http://tatabrew.com/",                      x: 620,  y: 435,  stroke: "darkorange",   fill: "white" },
         { name: "Townhouse Brew Pub",           location: "Antigonish",          logo: "townhouse.jpg",     url: "https://antigonishtownhouse.wordpress.com", x: 870,  y: 460,  stroke: "black",        fill: "wheat" },
-        { name: "Trider's Craft Beer",          location: "Amherst",             logo: "triders.png",       url: "https://lmgtfy.com",                        x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
+        { name: "Trider's Craft Beer",          location: "Amherst",             logo: "triders.png",       url: "https://twitter.com/tridersbeer",           x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
         { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
         { name: "Wayfarer's Ale Society",       location: "Port Williams",       logo: "wayfarers.png",     url: "http://www.wayfarersale.ca",                x: 415,  y: 588,  stroke: "gold",         fill: "darkred" },
     ],
