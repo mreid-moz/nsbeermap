@@ -5,6 +5,7 @@ var breweries = {
         { name: "Boxing Rock Brewing Co.",      location: "Shelburne",           logo: "boxing_rock.png",   url: "http://boxingrock.ca/",                     x: 242,  y: 970,  stroke: "darkorange",   fill: "darkorange" },
         { name: "Breton Brewing",               location: "Sydney, Cape Breton", logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
         { name: "FirkinStein Brewing",          location: "Bridgewater",         logo: "firkinstein.jpg",   url: "https://www.facebook.com/FirkinStein-Brewing-754150891380564", x: 390, y: 800,  stroke: "green", fill: "chocolate" },
+        { name: "Coming Soon: Half Cocked Brewing",          location: "Antigonish",          logo: "half_cocked.jpg",   url: "https://www.facebook.com/halfcockedbrewing", x: 860, y: 450,  stroke: "black",          fill: "white" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
         { name: "Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
@@ -188,5 +189,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Thursday, August 11, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Thursday, November 3, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
