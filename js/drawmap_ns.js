@@ -8,6 +8,7 @@ var breweries = {
         { name: "Coming Soon: Half Cocked Brewing",          location: "Antigonish",          logo: "half_cocked.jpg",   url: "https://www.facebook.com/halfcockedbrewing", x: 860, y: 450,  stroke: "black",          fill: "white" },
         { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
         { name: "Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
+        { name: "Coming Soon: Lunn's Mill Beer Co.",         location: "Lawrencetown",        logo: "lunnsmill.png",     url: "https://lunnsmill.beer",                    x: 282,  y: 663,  stroke: "goldenrod",    fill: "lightskyblue" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
         { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
@@ -189,5 +190,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Thursday, November 3, 2016.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Friday, January 6, 2017.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
