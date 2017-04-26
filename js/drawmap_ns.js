@@ -1,30 +1,31 @@
 var breweries = {
     province: [
-        { name: "Bad Apple Brewing",            location: "Somerset",            logo: "bad_apple.jpg",     url: "http://badapplebrewhouse.ca/",              x: 370,  y: 595,  stroke: "darkorange",   fill: "black" },
-        { name: "Big Spruce Brewing",           location: "Nyanza, Cape Breton", logo: "big_spruce.jpg",    url: "http://bigspruce.ca/",                      x: 1070, y: 330,  stroke: "green",        fill: "gold" },
-        { name: "Boxing Rock Brewing Co.",      location: "Shelburne",           logo: "boxing_rock.png",   url: "http://boxingrock.ca/",                     x: 242,  y: 970,  stroke: "darkorange",   fill: "darkorange" },
-        { name: "Breton Brewing",               location: "Sydney, Cape Breton", logo: "breton.png",        url: "http://bretonbrewing.ca/",                  x: 1200, y: 330,  stroke: "gold",         fill: "green" },
-        { name: "FirkinStein Brewing",          location: "Bridgewater",         logo: "firkinstein.jpg",   url: "https://www.facebook.com/FirkinStein-Brewing-754150891380564", x: 390, y: 800,  stroke: "green", fill: "chocolate" },
-        { name: "Coming Soon: Half Cocked Brewing",          location: "Antigonish",          logo: "half_cocked.jpg",   url: "https://www.facebook.com/halfcockedbrewing", x: 860, y: 450,  stroke: "black",          fill: "white" },
-        { name: "Hell Bay Brewing Co.",         location: "Liverpool",           logo: "hell_bay.jpg",      url: "http://hellbaybrewing.com/",                x: 400,  y: 865,  stroke: "black",        fill: "chocolate" },
-        { name: "Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
-        { name: "Lunn's Mill Beer Co.",         location: "Lawrencetown",        logo: "lunnsmill.png",     url: "https://lunnsmill.beer",                    x: 282,  y: 663,  stroke: "goldenrod",    fill: "lightskyblue" },
-        { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
-        { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
-        { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
-        { name: "Paddy's Irish Pub",            location: "Wolfville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 420,  y: 600,  stroke: "gold",         fill: "green" },
-        { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
-        { name: "Roof Hound Brewing Co.",       location: "Digby",               logo: "roofhound.jpg",     url: "http://roofhound.ca/",                      x: 156,  y: 758,  stroke: "gray",         fill: "black" },
-        { name: "Rudder's Brew Pub",            location: "Yarmouth",            logo: "rudders.jpg",       url: "http://ruddersbrewpub.com/",                x: 100,  y: 970,  stroke: "gold",         fill: "saddlebrown" },
-        { name: "Salt Box Brewing",             location: "Mahone Bay",          logo: "saltbox.png",       url: "http://www.saltboxbrewingcompany.ca/",      x: 414,  y: 781,  stroke: "blue",         fill: "black" },
-        { name: "Schoolhouse Brewery",          location: "Falmouth",            logo: "schoolhouse.jpg",   url: "http://schoolhousebrewery.ca",              x: 460,  y: 630,  stroke: "gold",         fill: "black" },
-        { name: "Sea Level Brewing",            location: "Port Williams",       logo: "sea_level.png",     url: "http://www.sealevelbrewing.com/",           x: 410,  y: 600,  stroke: "black",        fill: "gold" },
-        { name: "Sober Island Brewing Co.",     location: "Sheet Harbour",       logo: "sober_island.png",  url: "http://soberbrewing.ca/",                   x: 765,  y: 648,  stroke: "gold",         fill: "midnightblue" },
-        { name: "Tatamagouche Brewing Co.",     location: "Tatamagouche",        logo: "tatamagouche.png",  url: "http://tatabrew.com/",                      x: 620,  y: 435,  stroke: "darkorange",   fill: "white" },
-        { name: "Townhouse Brew Pub",           location: "Antigonish",          logo: "townhouse.jpg",     url: "https://antigonishtownhouse.wordpress.com", x: 870,  y: 460,  stroke: "black",        fill: "wheat" },
-        { name: "Trider's Craft Beer",          location: "Amherst",             logo: "triders.png",       url: "https://twitter.com/tridersbeer",           x: 453,  y: 404,  stroke: "darkgoldenrod",    fill: "black" },
-        { name: "Uncle Leo's Brewery",          location: "Lyon's Brook",        logo: "uncle_leos.jpg",    url: "http://uncleleosbrewery.ca/",               x: 720,  y: 445,  stroke: "darkred",      fill: "gold" },
-        { name: "Wayfarer's Ale Society",       location: "Port Williams",       logo: "wayfarers.png",     url: "http://www.wayfarersale.ca",                x: 415,  y: 588,  stroke: "gold",         fill: "darkred" },
+        { name: "Bad Apple Brewing",                 location: "Somerset",            logo: "bad_apple.jpg",       url: "http://badapplebrewhouse.ca/",                                 x: 370,  y: 595,  stroke: "darkorange",    fill: "black" },
+        { name: "Big Spruce Brewing",                location: "Nyanza, Cape Breton", logo: "big_spruce.jpg",      url: "http://bigspruce.ca/",                                         x: 1070, y: 330,  stroke: "green",         fill: "gold" },
+        { name: "Boxing Rock Brewing Co.",           location: "Shelburne",           logo: "boxing_rock.png",     url: "http://boxingrock.ca/",                                        x: 242,  y: 970,  stroke: "darkorange",    fill: "darkorange" },
+        { name: "Breton Brewing",                    location: "Sydney, Cape Breton", logo: "breton.png",          url: "http://bretonbrewing.ca/",                                     x: 1200, y: 330,  stroke: "gold",          fill: "green" },
+        { name: "FirkinStein Brewing",               location: "Bridgewater",         logo: "firkinstein.jpg",     url: "https://www.facebook.com/FirkinStein-Brewing-754150891380564", x: 390,  y: 800,  stroke: "green",         fill: "chocolate" },
+        { name: "Coming Soon: Half Cocked Brewing",  location: "Antigonish",          logo: "half_cocked.jpg",     url: "https://www.facebook.com/halfcockedbrewing",                   x: 860,  y: 450,  stroke: "black",         fill: "white" },
+        { name: "Hell Bay Brewing Co.",              location: "Liverpool",           logo: "hell_bay.jpg",        url: "http://hellbaybrewing.com/",                                   x: 400,  y: 865,  stroke: "black",         fill: "chocolate" },
+        { name: "Lazy Bear Brewing",                 location: "Smith's Cove",        logo: "lazy_bear.jpg",       url: "http://www.lazybearbrewing.ca/",                               x: 176,  y: 735,  stroke: "black",         fill: "white" },
+        { name: "Lunn's Mill Beer Co.",              location: "Lawrencetown",        logo: "lunnsmill.png",       url: "https://lunnsmill.beer",                                       x: 282,  y: 663,  stroke: "goldenrod",     fill: "lightskyblue" },
+        { name: "Meander River Farm & Brewery",      location: "Ashdale",             logo: "meander_river.jpg",   url: "http://meanderriverfarm.ca/",                                  x: 504,  y: 624,  stroke: "mediumpurple",  fill: "burlywood" },
+        { name: "The Nook and Cranny",               location: "Truro",               logo: "nook_cranny.png",     url: "http://thenookandcranny.ca/",                                  x: 630,  y: 527,  stroke: "black",         fill: "white" },
+        { name: "One Way Brewing",                   location: "Truro",               logo: "one_way_brewing.png", url: "https://www.facebook.com/OneWayBrewing/",                      x: 635,  y: 528,  stroke: "black",         fill: "white" },
+        { name: "Paddy's Irish Pub",                 location: "Kentville",           logo: "paddys.jpg",          url: "http://www.paddyspub.ca/",                                     x: 395,  y: 603,  stroke: "gold",          fill: "green" },
+        { name: "Paddy's Irish Pub",                 location: "Wolfville",           logo: "paddys.jpg",          url: "http://www.paddyspub.ca/",                                     x: 420,  y: 600,  stroke: "gold",          fill: "green" },
+        { name: "Rare Bird Craft Beer",              location: "Guysborough",         logo: "rare_bird.jpg",       url: "http://www.rarebirdbeer.com/",                                 x: 958,  y: 522,  stroke: "darkred",       fill: "wheat" },
+        { name: "Roof Hound Brewing Co.",            location: "Digby",               logo: "roofhound.jpg",       url: "http://roofhound.ca/",                                         x: 156,  y: 758,  stroke: "gray",          fill: "black" },
+        { name: "Rudder's Brew Pub",                 location: "Yarmouth",            logo: "rudders.jpg",         url: "http://ruddersbrewpub.com/",                                   x: 100,  y: 970,  stroke: "gold",          fill: "saddlebrown" },
+        { name: "Salt Box Brewing",                  location: "Mahone Bay",          logo: "saltbox.png",         url: "http://www.saltboxbrewingcompany.ca/",                         x: 414,  y: 781,  stroke: "blue",          fill: "black" },
+        { name: "Schoolhouse Brewery",               location: "Falmouth",            logo: "schoolhouse.jpg",     url: "http://schoolhousebrewery.ca",                                 x: 460,  y: 630,  stroke: "gold",          fill: "black" },
+        { name: "Sea Level Brewing",                 location: "Port Williams",       logo: "sea_level.png",       url: "http://www.sealevelbrewing.com/",                              x: 410,  y: 600,  stroke: "black",         fill: "gold" },
+        { name: "Sober Island Brewing Co.",          location: "Sheet Harbour",       logo: "sober_island.png",    url: "http://soberbrewing.ca/",                                      x: 765,  y: 648,  stroke: "gold",          fill: "midnightblue" },
+        { name: "Tatamagouche Brewing Co.",          location: "Tatamagouche",        logo: "tatamagouche.png",    url: "http://tatabrew.com/",                                         x: 620,  y: 435,  stroke: "darkorange",    fill: "white" },
+        { name: "Townhouse Brew Pub",                location: "Antigonish",          logo: "townhouse.jpg",       url: "https://antigonishtownhouse.wordpress.com",                    x: 870,  y: 460,  stroke: "black",         fill: "wheat" },
+        { name: "Trider's Craft Beer",               location: "Amherst",             logo: "triders.png",         url: "https://twitter.com/tridersbeer",                              x: 453,  y: 404,  stroke: "darkgoldenrod", fill: "black" },
+        { name: "Uncle Leo's Brewery",               location: "Lyon's Brook",        logo: "uncle_leos.jpg",      url: "http://uncleleosbrewery.ca/",                                  x: 720,  y: 445,  stroke: "darkred",       fill: "gold" },
+        { name: "Wayfarer's Ale Society",            location: "Port Williams",       logo: "wayfarers.png",       url: "http://www.wayfarersale.ca",                                   x: 415,  y: 588,  stroke: "gold",          fill: "darkred" },
     ],
     city: [
         { name: "2 Crows Brewing Co",           location: "1932 Brunswick St",     logo: "2crows.jpg",       url: "http://2crowsbrewing.com/",                x: 1131, y: 820,  stroke: "blue",         fill: "red" },
@@ -39,7 +40,7 @@ var breweries = {
         { name: "Propeller Brewing Company",    location: "2015 Gottingen St",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1120, y: 815,  stroke: "gold",         fill: "darkred" },
         { name: "Propeller Brewing Company",    location: "617 Windmill Road",     logo: "propeller.jpg",    url: "http://drinkpropeller.ca/",                x: 1012, y: 606,  stroke: "gold",         fill: "darkred" },
         { name: "Rockbottom Brewpub",           location: "5686 Spring Garden Rd", logo: "rock_bottom.jpg",  url: "http://rockbottombrewpub.ca/",             x: 1128, y: 868,  stroke: "black",        fill: "gold" },
-        { name: "Spindrift Brewing",            location: "21 Frazee Ave",         logo: "spindrift.jpg", url: "http://www.spindriftbrewing.com/",         x: 1080, y: 606,  stroke: "white",        fill: "blue" },
+        { name: "Spindrift Brewing",            location: "21 Frazee Ave",         logo: "spindrift.jpg",    url: "http://www.spindriftbrewing.com/",         x: 1080, y: 606,  stroke: "white",        fill: "blue" },
         { name: "Unfiltered Brewing",           location: "6041 North St",         logo: "unfiltered.png",   url: "http://unfuckingfiltered.com/",            x: 1050, y: 787,  stroke: "white",        fill: "green" },
     ],
     zooms: [
@@ -102,14 +103,33 @@ function drawPoints(R, somePoints, baseX, baseY) {
         seen[b.name] = true;
 
         // Map point:
-        var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url, opacity: opacity});
-        // var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
+        var p;
+        if (isDebug()) {
+            // in debug mode, we disable the clicking the dot to load the brewery's URL and enable dragging the dot around (this prints the new x,y coords to the console)
+            p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
+            p.drag(move, start, up);
+        } else {
+            p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url, opacity: opacity});
+        }
         p.hover(hover_in, hover_out);
         p.info = b;
-
-        // Debug: use to tweak dots:
-        // p.drag(move, start, up);
     });
+}
+
+function isDebug() {
+    return getParameterByName('debug') === 'true';
+}
+
+function getParameterByName(name, url) {
+    // from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 function load() {
@@ -190,5 +210,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Friday, January 6, 2017.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Wednesday, April 26, 2017.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
