@@ -105,6 +105,7 @@ function drawPoints(R, somePoints, baseX, baseY) {
         // Map point:
         var p;
         if (isDebug()) {
+            // in debug mode, we disable the clicking the dot to load the brewery's URL and enable dragging the dot around (this prints the new x,y coords to the console)
             p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
             p.drag(move, start, up);
         } else {
