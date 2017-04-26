@@ -102,14 +102,32 @@ function drawPoints(R, somePoints, baseX, baseY) {
         seen[b.name] = true;
 
         // Map point:
-        var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url, opacity: opacity});
-        // var p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
+        var p;
+        if (isDebug()) {
+            p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, opacity: opacity});
+            p.drag(move, start, up);
+        } else {
+            p = R.circle(b.x, b.y, 6).attr({stroke:b.stroke, fill:b.fill, "stroke-width": 2, "href": b.url, opacity: opacity});
+        }
         p.hover(hover_in, hover_out);
         p.info = b;
-
-        // Debug: use to tweak dots:
-        // p.drag(move, start, up);
     });
+}
+
+function isDebug() {
+    return getParameterByName('debug') === 'true';
+}
+
+function getParameterByName(name, url) {
+    // from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 function load() {
