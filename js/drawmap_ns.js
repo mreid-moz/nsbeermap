@@ -10,7 +10,8 @@ var breweries = {
         { name: "Lazy Bear Brewing",            location: "Smith's Cove",        logo: "lazy_bear.jpg",     url: "http://www.lazybearbrewing.ca/",            x: 176,  y: 735,  stroke: "black",        fill: "white" },
         { name: "Lunn's Mill Beer Co.",         location: "Lawrencetown",        logo: "lunnsmill.png",     url: "https://lunnsmill.beer",                    x: 282,  y: 663,  stroke: "goldenrod",    fill: "lightskyblue" },
         { name: "Meander River Farm & Brewery", location: "Ashdale",             logo: "meander_river.jpg", url: "http://meanderriverfarm.ca/",               x: 504,  y: 624,  stroke: "mediumpurple", fill: "burlywood" },
-        { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 625,  y: 527,  stroke: "black",        fill: "white" },
+        { name: "The Nook and Cranny",          location: "Truro",               logo: "nook_cranny.png",   url: "http://thenookandcranny.ca/",               x: 630,  y: 527,  stroke: "black",        fill: "white" },
+        { name: "One Way Brewing",              location: "Truro",               logo: "one_way_brewing.png", url: "https://www.facebook.com/OneWayBrewing/", x: 635,  y: 528,  stroke: "black",        fill: "white" },
         { name: "Paddy's Irish Pub",            location: "Kentville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 395,  y: 603,  stroke: "gold",         fill: "green" },
         { name: "Paddy's Irish Pub",            location: "Wolfville",           logo: "paddys.jpg",        url: "http://www.paddyspub.ca/",                  x: 420,  y: 600,  stroke: "gold",         fill: "green" },
         { name: "Rare Bird Craft Beer",         location: "Guysborough",         logo: "rare_bird.jpg",     url: "http://www.rarebirdbeer.com/",              x: 958,  y: 522,  stroke: "darkred",      fill: "wheat" },
@@ -208,5 +209,5 @@ function load() {
     drawPoints(R, breweries.city, 510, 805);
 
 
-    R.text(350, 1080, "Last Updated Friday, January 6, 2017.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
+    R.text(350, 1080, "Last Updated Wednesday, April 26, 2017.  Please email corrections and additions to craftbeer@markreid.org").attr({"text-anchor": "start"});
 }
